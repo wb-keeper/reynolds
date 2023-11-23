@@ -1,5 +1,5 @@
 import { Alex_Brush, Montserrat } from "next/font/google";
-import "./globals.css";
+import Trc from "./globals.css";
 import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";
 
@@ -21,12 +21,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  console.log(Trc);
   return (
     <html lang="en">
       <body
         className={`${alexBrush.variable} ${montserrat.variable} overflow-x-hidden relative`}
       >
         <Header />
+        {Trc}
         {children}
         <Footer />
       </body>
