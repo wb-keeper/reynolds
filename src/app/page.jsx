@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <Player />
       <Events />
-      <div className="h-[4000px] bg-white"></div>
+      <div className="h-[3000px] bg-white"></div>
     </main>
   );
 }

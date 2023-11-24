@@ -9,8 +9,8 @@ function Player(props) {
     <>
       <div className="bg-gradient-to-r from-tertiary/70 to-primary/10 backdrop-blur-[15px] -mt-[5px] pb-[15px] h-[112px] flex items-center relative z-40">
         <div className="container mx-auto flex flex-col justify-between items-center xl:flex-row">
-          <div className="hidden w-[300px] xl:flex items-center gap-x-4">
-            <div className="relative w-16 h-16">
+          <div className="hidden w-[310px] xl:flex items-center gap-x-4">
+            <div className="relative w-14 h-14">
               <Image
                 src={"/assets/player/avatar.png"}
                 fill

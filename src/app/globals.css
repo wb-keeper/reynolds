@@ -60,11 +60,11 @@ body {
   @apply !bg-[#33335b] !h-[2px]
 }
 .rap-container .rap-controls span {
-  @apply text-[15px]
+  @apply text-[16px]
 }
 .rap-volume-btn .rap-volume-open svg path {
   @apply fill-white
 }
 .rap-volume-controls {
-  @apply !bg-primary/80
+  @apply !bg-primary/70
 }
