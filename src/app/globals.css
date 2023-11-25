@@ -68,3 +68,6 @@ body {
 .rap-volume-controls {
   @apply !bg-primary/70
 }
+.active {
+  @apply border-b-2 border-accent
+}
