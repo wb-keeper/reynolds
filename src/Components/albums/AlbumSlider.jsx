@@ -17,7 +17,6 @@ function AlbumSlider(props) {
   const { data, error } = useSWR("http://localhost:4000/albums", fetcher);
   if (error) return "Failed to fetch data";
   if (!data) return "Loading...";
-  console.log(data);
   return (
     <>
       <Swiper
@@ -118,16 +117,24 @@ function AlbumSlider(props) {
             spaceBetween: 30,
           },
         }}
+        spaceBetween={20}
+        slidesPerView={5}
+        freeMode={true}
+        watchSlidesProgress={true}
+        className="thumb-slider"
       >
         {data?.map((thumb, index) => {
           return (
-            <SwiperSlide key={index}>
-              <div className="relative w-[195px] h-[195px]">
+            <SwiperSlide
+              key={index}
+              className="relative group overflow-hidden border-2 border-transparent w-[254px] rounded-[10px]"
+            >
+              <div className="relative w-[195px] h-[195px] sm:w-[360px] md:w-[240px] md:max-h-[240px] cursor-pointer ">
                 <Image
                   src={thumb.img}
                   fill
                   priority
-                  className="object-contain"
+                  className="object-contain group-hover:scale-105 transition-all duration-300"
                   alt="img"
                 />
               </div>
