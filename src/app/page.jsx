@@ -3,6 +3,7 @@ import Events from "@/Components/events/Events";
 import Hero from "@/Components/Hero";
 import Player from "@/Components/Player";
 import Albums from "@/Components/albums/Albums";
+import Blog from "@/Components/blog/Blog";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Player />
       <Events />
       <Albums />
+      <Blog />
       <div className="h-[3000px] bg-white"></div>
     </main>
   );

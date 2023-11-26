@@ -5,6 +5,7 @@ const links = [
   { path: "home", name: "Home" },
   { path: "tours", name: "Tours" },
   { path: "discography", name: "Discography" },
+  { path: "blog", name: "Blog" },
   { path: "contact", name: "Contact" },
 ];
 function Nav({ containerStyle, linkStyles }) {
