@@ -5,6 +5,7 @@ import Player from "@/Components/Player";
 import Albums from "@/Components/albums/Albums";
 import Blog from "@/Components/blog/Blog";
 import Newsletter from "@/Components/Newsletter";
+import Footer from "@/Components/Footer";
 
 export default function Home() {
   return (
@@ -15,7 +16,6 @@ export default function Home() {
       <Albums />
       <Blog />
       <Newsletter />
-      <div className="h-[3000px] bg-white"></div>
     </main>
   );
 }
